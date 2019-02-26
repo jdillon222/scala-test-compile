@@ -1,0 +1,1 @@
+scalac -bootclasspath /Users/james/.sbt/boot/scala-2.12.7/lib/scala-library.jar -classpath /Users/james/Jira/_Open/OPS-2536[dst_lambda_migration]/CodeBuild/scala-test-compile/target/scala-2.12/classes /Users/james/Jira/_Open/OPS-2536[dst_lambda_migration]/CodeBuild/scala-test-compile/LicenseCountBell.scala
