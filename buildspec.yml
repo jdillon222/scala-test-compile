@@ -9,7 +9,7 @@ phases:
        - sbt assembly
        # Since we want our pipeline to automatically deploy our changes, we also assume our Github repo also has a Cloud Formation template
        # that contains any resources we need to create for say a Lambda Function, e.x. maybe we need to create a new DynamoDB table
-       - aws cloudformation package --template-file template.yaml --s3-bucket plume-development-test-scala-build --output-template-file package.yaml
+       #- aws cloudformation package --template-file template.yaml --s3-bucket plume-development-test-scala-build --output-template-file package.yaml
  artifacts:
   discard-paths: yes
   files:
