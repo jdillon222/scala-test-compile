@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-       - echo "starting build..."
- artifacts:
+      - echo "starting build..."
+artifacts:
   files:
     - file.txt
