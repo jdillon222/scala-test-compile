@@ -4,12 +4,7 @@ phases:
   build:
     commands:
        - echo "starting build..."
-       - ds=$(date +"%y%m%d.%S")
-       # Build a fat jar of our code using SBT
-       #- sbt assembly
-       - echo "hello joker" > joke${ds}.txt
-       - aws s3 cp joke${ds}.txt s3://plume-development-test-scala-build
+       - echo "tester" > file.txt
  artifacts:
   files:
-    # These are our "artifacts", e.g. the output of our build system we'd like Code Build to do something with
-    - joke${ds}.txt
+    - file.txt
