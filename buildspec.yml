@@ -4,7 +4,6 @@ phases:
   build:
     commands:
        - echo "starting build..."
-       - echo "tester" > file.txt
  artifacts:
   files:
     - file.txt
