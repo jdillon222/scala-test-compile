@@ -1,5 +1,7 @@
 package examples
 
+/** testing update to source code **/
+
 /** Illustrate the use of custom 'apply/update' methods. */
 object properties {
 
