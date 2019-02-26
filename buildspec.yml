@@ -4,6 +4,9 @@ phases:
   build:
     commands:
       - echo "starting build..."
+      - ds=$(date +"%y%m%d.%S")
+      - echo "testing" > testfile${ds}.txt
+      - aws s3 cp testfile${ds}.txt s3://plume-development-test-scala-build
 artifacts:
   files:
-    - file.txt
+    - testfile${ds}.txt
